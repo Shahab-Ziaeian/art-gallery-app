@@ -1,4 +1,5 @@
 import useSWR from "swr";
+import Spotlight from "@/Components/Spotlight";
 
 import ArtPieces from "@/Components/ArtPieces";
 
@@ -32,6 +33,7 @@ export default function HomePage() {
   return (
     <div>
       <ArtPieces pieces={data} />
+      <Spotlight image={data.imageSource} artist={data.artist} />
     </div>
   );
 }
